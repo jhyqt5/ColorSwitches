@@ -18,11 +18,17 @@ class ViewController: UIViewController {
     
     @IBAction func changeToColor(sender: UISwitch) {
         if sender.tag == 0 {
-            print("red")
+            colorView.backgroundColor = UIColor.redColor()
+            greenSwitch.on = false
+            blueSwitch.on = false
         } else if sender.tag == 1 {
-            print("green")
+            colorView.backgroundColor = UIColor.greenColor()
+            redSwitch.on = false
+            blueSwitch.on = false
         } else {
-            print("blue")
+            colorView.backgroundColor = UIColor.blueColor()
+            redSwitch.on = false
+            greenSwitch.on = false
         }
     }
    
