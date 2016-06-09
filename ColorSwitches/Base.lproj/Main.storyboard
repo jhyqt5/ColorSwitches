@@ -38,12 +38,21 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m69-DM-Sso">
                                 <rect key="frame" x="291" y="216" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeToColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="wso-yb-JMm"/>
+                                </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTb-3c-mSu">
+                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTb-3c-mSu">
                                 <rect key="frame" x="291" y="255" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeToColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="OkS-JA-rEa"/>
+                                </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FeH-XW-XNA">
+                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FeH-XW-XNA">
                                 <rect key="frame" x="291" y="294" width="51" height="31"/>
+                                <connections>
+                                    <action selector="changeToColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="52a-hM-2yH"/>
+                                </connections>
                             </switch>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ro-dD-CKd">
                                 <rect key="frame" x="180" y="379" width="240" height="128"/>
@@ -72,6 +81,12 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Ro-dD-CKd" secondAttribute="bottom" constant="150" id="qdV-FQ-usB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSwitch" destination="FeH-XW-XNA" id="OLS-Jm-F6x"/>
+                        <outlet property="colorView" destination="6Ro-dD-CKd" id="eH8-kp-wfO"/>
+                        <outlet property="greenSwitch" destination="XTb-3c-mSu" id="z1P-64-RGz"/>
+                        <outlet property="redSwitch" destination="m69-DM-Sso" id="G9X-TT-285"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
